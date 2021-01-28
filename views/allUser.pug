@@ -1,0 +1,13 @@
+doctype html
+link(rel="shortcut icon" href="#")
+html
+    head
+        title Parasite Breach
+    body
+        header
+            include includes/nav
+        if user.length != 0
+            each user in users
+                user.idUser
+        else
+            h1 Is not here
